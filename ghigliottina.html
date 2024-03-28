@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang = "it">
+<head>
+	<title>L'Eredità - Gioca</title>
+	<meta charset="utf-8" />
+	<script src="gioco.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="gioco.css" />
+</head>
+<body>
+	<header>
+	<h1>L'Eredità</h1>
+	</header>
+	<ul class="navigation">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="regolamento.html">Regolamento</a></li>
+		<li><a href="presentatori.html">Presentatori</a></li>
+		<li><a href="ghigliottina.html" id="attivo">Gioca</a></li>
+	</ul>
+	<article class="partita">
+		<h2>LA GHIGLIOTTINA</h2>
+		<div id="spiegazione"></div>
+		<input type="text" 
+		id="Parola1"
+		value=""
+		readonly />
+		<input type="text" 
+		id="Parola2"
+		value=""
+		readonly />
+		<br />
+		<input type="text" 
+		id="Parola3"
+		class="ParoleNascoste" 
+		value=""
+		readonly />
+		<input type="text" 
+		id="Parola4"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<br />
+		<input type="text" 
+		id="Parola5"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<input type="text" 
+		id="Parola6"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<br />
+		<input type="text" 
+		id="Parola7"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<input type="text" 
+		id="Parola8"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<br />
+		<input type="text" 
+		id="Parola9"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<input type="text" 
+		id="Parola10"
+		class="ParoleNascoste"
+		value=""
+		readonly />
+		<br />
+		<input type="text"
+		id="montepremi"
+		value="200000"
+		readonly />
+		<br />
+		<input type="text"
+		placeholder="Risposta" 
+		id="risposta" />
+		<br />
+		<br />
+		<input type="button" 
+		id="conferma" 
+		value="Inserisci risposta"/>
+	</article>
+	<footer>
+		<a href ="about.html">Questo sito è stato progettato per l'esame di Progettazione e Programmazione WEB</a>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".ParoleNascoste").hide();
+			$("#Parola1").click(function(){
+				$("#Parola3").show();
+				$("#Parola4").show();
+			});
+			$("#Parola2").click(function(){
+				$("#Parola3").show();
+				$("#Parola4").show();
+			});
+			$("#Parola3").click(function(){
+				$("#Parola5").show();
+				$("#Parola6").show();
+			});
+			$("#Parola4").click(function(){
+				$("#Parola5").show();
+				$("#Parola6").show();
+			});
+			$("#Parola5").click(function(){
+				$("#Parola7").show();
+				$("#Parola8").show();
+			});
+			$("#Parola6").click(function(){
+				$("#Parola7").show();
+				$("#Parola8").show();
+			});
+			$("#Parola7").click(function(){
+				$("#Parola9").show();
+				$("#Parola10").show();
+			});
+			$("#Parola8").click(function(){
+				$("#Parola9").show();
+				$("#Parola10").show();
+			});
+		});
+	</script>
+</body>
+</html>

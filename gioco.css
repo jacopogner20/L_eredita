@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+body {
+	font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("grandestudio.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+	font-family: 'Titillium Web', sans-serif;
+	border: 4px solid;
+	border-color: rgb(0, 59, 162);
+	color: white;
+	background-color: rgb(0, 59, 162);
+}
+header h1 {
+  font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 525%;
+}
+li  {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 230%;
+  border-color: rgb(0, 59, 162);
+}
+ul {
+  font-family: 'Titillium Web', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+  font-family: 'Titillium Web', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+#attivo {
+  border-bottom: 4px solid white;
+}
+.partita {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid rgb(0, 59, 162);
+    padding: 30px;
+    box-shadow: 2px 2px 10px grey;
+    margin-bottom: 40px;
+    border-radius: 13px;
+    text-align: center;
+}
+#spiegazione {
+  font-size: 140%;
+  margin-bottom: 45px;
+}
+#montepremi {
+  width: 460px;
+  font-size: 150%;
+  margin-top: 23px;
+  background-color: red;
+  border-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 13px;
+  border-right-color: white;
+}
+#Parola1, #Parola2, #Parola3, #Parola4, #Parola5, #Parola6, #Parola7, #Parola8, #Parola9, #Parola10 {
+  font-size: 90%;
+  padding: 5px;
+  color: white;
+  background-color: rgb(0, 59, 162);
+  border-color: black;
+  border-radius: 13px;
+  text-align: center;
+}
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background: rgb(0, 59, 162);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  border-bottom: 4px solid rgb(0, 59, 162);
+}
+.navigation a:hover {
+  border-bottom: 4px solid white;
+}
+#Parola1:hover, #Parola2:hover, #Parola3:hover, #Parola3:hover, #Parola4:hover, #Parola5:hover, #Parola6:hover, #Parola7:hover, #Parola8:hover, #Parola9:hover, #Parola10:hover {
+  cursor: pointer;
+}
+#conferma {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  border: none;
+  background-color: rgb(0, 59, 162);
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+#conferma:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#risposta {
+  border-color: red;
+  border-radius: 13px;
+  padding: 6px;
+  font-size: 60%;
+  width: 30%;
+  height: 50px;
+  margin-top: 12px;
+}
+footer {
+  font-size: 200%;
+  background-color: rgb(0, 59, 162);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+footer a:visited {
+  color: white;
+}
+footer a:link {
+  color: white;
+}
+@media all and (min-width: 550px) {
+  .partita {
+    font-size: 160%;
+  }
+}
+@media all and (max-width: 900px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  header h1 {
+    font-size: 340%;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 4px solid rgb(0, 59, 162);
+    font-size: 90%; 
+  }
+  #spiegazione {
+    font-size: 120%;
+  }
+  #montepremi {
+    width: 40%;
+  }
+  #risposta {
+    width: 50%;
+  }
+  #conferma {
+    padding: 15px 15px;
+    font-size: 20px;
+  }
+   footer {
+    padding: 20px;
+    font-size: 120%;
+  }
+}
+@media all and (max-width: 549px) {
+  article h2 {
+    font-size: 200%;
+    margin-top: 12px;
+  }
+  #spiegazione {
+    font-size: 160%;
+  }
+}
+@media all and (min-width: 901px) {
+  article h2 {
+    font-size: 100%;
+    margin-top: 10px; 
+  }
+  .partita {
+    font-size: 120%;
+  }
+  #montepremi {
+    width: 30%; 
+  }
+  #spiegazione {
+    font-size: 100%;
+  }
+    .partita {
+    font-size: 200%;
+  }
+    footer {
+    font-size: 120%;
+  }
+}
+@media all and (max-width: 1133px) {
+  #Parola3, #Parola5, #Parola7, #Parola9 {
+    margin-top: 12px;
+  }
+}
+@media all and (min-width: 2000px) {
+  body {
+    font-size: 130%;
+  }
+  .partita {
+    font-size: 130%;
+  }
+  article h2 {
+    font-size: 300%;
+    margin-top: 12px;
+  }
+  #Parola1 {
+    margin-top: 15px;
+  }
+  footer {
+    font-size: 120%;
+  }
+}

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("grandestudio.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+	font-family: 'Titillium Web', sans-serif;
+	border: 4px solid;
+	border-color: rgb(0, 59, 162);
+	color: white;
+	background-color: rgb(0, 59, 162);
+}
+header h1 {
+  font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 525%;
+}
+header h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+article h2 {
+  text-transform: uppercase;
+  font-size: 20%;
+  margin-top: -5%; 
+}
+article h3 {
+  text-align: center;
+}
+#logoEredita {
+  margin-left: 25%;
+  width: 50%;
+  border: 3px solid rgb(0, 59, 162);
+  margin-bottom: 5%;
+  border-radius: 12px;
+}
+#FriCo {
+  margin-left: 25%;
+  width: 50%;
+  border: 3px solid rgb(0, 59, 162);
+  margin-bottom: 5%;
+  border-radius: 12px;
+}
+article {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid rgb(0, 59, 162);
+    padding: 30px;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 13px;
+    margin-bottom: 70px;
+}
+#amadeus {
+  border: 4px solid rgb(0, 59, 162);
+  border-radius: 12px;
+}
+#amadeus:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+#conti {
+  border: 4px solid rgb(0, 59, 162);
+  border-radius: 12px; 
+}
+#conti:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+#frizzi {
+  border: 4px solid rgb(0, 59, 162);
+  border-radius: 12px;
+}
+#frizzi:hover {
+  border: 4px solid rgb(0, 59, 162);
+  cursor: pointer;
+}
+#insinna {
+  border: 4px solid rgb(0, 59, 162);
+  border-radius: 12px;
+}
+#insinna:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+#frizzi:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+#presentano {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: white;
+  border: 2px solid rgb(0, 59, 162);
+  padding: 30px;
+  box-shadow: 2px 2px 10px grey;
+  margin-bottom: 20px;
+  display: none;
+  border-radius: 12px;
+  font-size: 140%;
+}
+.conduttore {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+p {
+	font-family: 'Titillium Web', sans-serif;
+  background-color: white;
+}
+li  {
+	font-family: 'Titillium Web', sans-serif;
+  font-size: 230%;
+  border-color: rgb(0, 59, 162);
+}
+ul {
+	font-family: 'Titillium Web', sans-serif;
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+}
+li a {
+  font-family: 'Titillium Web', sans-serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+#attivo {
+  border-bottom: 4px solid white;
+}
+footer {
+  font-size: 200%;
+  background-color: rgb(0, 59, 162);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+footer a:visited {
+  color: white;
+}
+footer a:link {
+  color: white;
+}
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background: rgb(0, 59, 162);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  border-bottom: 4px solid rgb(0, 59, 162);
+}
+.navigation a:hover {
+  border-bottom: 4px solid white;
+}
+.navigation a.active {
+  border-bottom: 4px solid white;
+}
+@media all and (min-width: 300px) {
+  article  {
+    font-size: 70%;
+  }
+}
+@media all and (max-width: 900px) {
+    header h1 {
+    font-size: 340%;
+  }
+  article h3 {
+    text-align: center;
+  }
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 4px solid rgb(0, 59, 162);
+    font-size: 90%; 
+  }
+  #FriCo {
+  	display: none;
+  }
+  #logoEredita {
+  	display: none;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+@media all and (max-width: 1999px) {
+  article h2 {
+    margin-top: 12px;
+    font-size: 280%;
+    text-align: center;  
+  }
+  article h3 {
+    font-size: 270%;
+  }
+  article p {
+    font-size: 250%;
+  }
+  #amadeus {
+    width: 300px;
+    height: 300px;
+  }
+  #conti {
+    width: 300px;
+    height: 300px;
+  }
+  #insinna {
+    width: 300px;
+    height: 300px;
+  }
+  #frizzi {
+    width: 300px;
+    height: 300px;
+  }
+  footer {
+    font-size: 120%;
+  }
+}
+@media all and (min-width: 2000px) {
+  body {
+    font-size: 130%;
+  } 
+  #logoEredita {
+    width: 450px;
+    margin-top: 22px;
+    margin-left: 38%;
+    margin-bottom: 20px;
+  }
+  article {
+    font-size: 120%;
+  }
+  article h2 {
+    margin-top: 12px;
+    font-size: 340%;
+    text-align: center;
+  }
+  article h3 {
+    font-size: 200%;
+  }
+  #FriCo {
+    width: 600px;
+    margin-left: 31%;
+  }
+  #amadeus {
+    width: 400px;
+    height: 400px;
+  }
+  #conti {
+    width: 400px;
+    height: 400px;
+  }
+  #insinna {
+    width: 400px;
+    height: 400px;
+  }
+  #frizzi {
+    width: 400px;
+    height: 400px;
+  }
+  footer {
+    font-size: 120%;
+  }
+}
